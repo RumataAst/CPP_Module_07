@@ -1,7 +1,7 @@
 
 NAME	=  
 NAME_Debug = Debug
-SRCS    := main.cpp 
+SRCS    := main.cpp Array.tpp
 BIN		:= bin
 OBJS    := $(addprefix $(BIN)/, $(SRCS:.cpp=.o))
 INC		:= include
