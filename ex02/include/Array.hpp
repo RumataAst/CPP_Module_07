@@ -1,10 +1,13 @@
 #pragma once
+#include <iostream>
+#include <exception>
 
 template <class T>
 class Array {
 private:
-    T               array[];
     unsigned int    _size;
+    T*              _array;
+
 public:
     Array();
     Array(unsigned int n);
@@ -17,8 +20,8 @@ public:
 
     class OutOfBounds : public std::exception {
         public:
-            const char*     what() const throw() {
-                return ("Index is out of bounds");
+            const char* what() const throw() {
+                return "Index is out of bounds";
             }
-    }
+    };
 };
