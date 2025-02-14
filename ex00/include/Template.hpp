@@ -4,7 +4,7 @@
 
 
 template <typename T>
-void swap(T &first_arg, T &second_arg) {
+void swap(T &first_arg, T &second_arg){
     T temp;
 
     temp = first_arg;

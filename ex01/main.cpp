@@ -10,14 +10,11 @@ void plus_one(T &a) {
     a++;
 }
 
-
-
 struct ConstFunctor {
     void operator()(int x) const {  // const operator()
         std::cout << "ConstFunctor: " << x << "\n";
     }
 };
-
 
 int main(void){
     int     array[5] = {0, 1, 2, 3 , 4};
